@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/icon/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#191919" />
+    <meta property="og:image" content="%PUBLIC_URL%/icon/logo256.png" />
+    <meta property="og:title" content="Modmail" />
+    <meta property="og:url" content="https://modmail.pewdiemc.io/" />
+    <meta property="og:description" content="A web interface used to view modmail threads and messages" />
+    <meta
+      name="description"
+      content="A web interface used to view modmail threads and messages"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/icon/logo256.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <title>Modmail</title>
+    <style>
+      html {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        width: 100vw;
+        font-family: 'Monserrat', sans-serif;
+      }
+
+      body {
+        margin: 0;
+        padding: 0;
+        transition: ease background .5s;
+        background: #000;
+      }
+
+      #splash-container {
+        display: block;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background: #181818;
+        z-index: 9999;
+        top: 0;
+        left: 0;
+        overflow:hidden;
+        transition: 0.4s opacity ease;
+      }
+
+      .circle-white {
+        width: 8em;
+        height: 8em;
+        border: 2px dashed #f6f6f6;
+        border-radius: 50%;
+      }
+
+      .preloader .text {
+        color: #f6f6f6;
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        top: calc(50% - 5em);
+        font-size: 2em;
+        font-weight: bold;
+      }
+
+      .preloader .circle {
+        animation: rotate-circle 4s linear infinite;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        top: 0;
+        bottom: 0;
+      }
+
+      .preloader .circle:after {
+        content: '';
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        background: #f6f6f6;
+        position: absolute;
+        top: calc(4em - 14px);
+        left: calc(4em - 14px);
+      }
+
+      @keyframes rotate-circle {
+        0% {
+          transform: rotateZ(0deg);
+        }
+        100% { transform: rotateZ(720deg); }
+      }
+    </style>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="splash-container">
+      <div class="preloader">
+        <div class="text">Loading Modmail</div>
+        <span class="circle circle-white"></span>
+      </div>
+    </div>
+    <div id="root"></div>
+  </body>
+</html>

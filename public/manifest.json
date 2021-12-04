@@ -1,0 +1,46 @@
+{
+  "short_name": "Modmail",
+  "name": "Floor-Gang Modmail",
+  "description": "A web interface used to view modmail threads and messages",
+  "intent_filters": {
+    "scope_url_scheme": "https",
+    "scope_url_host": "discord.com",
+    "scope_url_path": "/channels"
+  },
+  "icons": [
+    {
+      "src": "icon/favicon.ico",
+      "sizes": "64x64",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "icon/64.png",
+      "type": "image/png",
+      "sizes": "64x64"
+    },
+    {
+      "src": "icon/96.png",
+      "type": "image/png",
+      "sizes": "96x96"
+    },
+    {
+      "src": "icon/256.png",
+      "type": "image/png",
+      "sizes": "256x256"
+    },
+    {
+      "src": "icon/192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "icon/512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#000"
+}
