@@ -1,6 +1,6 @@
 {
   "short_name": "Modmail",
-  "name": "Floor-Gang Modmail",
+  "name": "Pyrocynical Modmail",
   "description": "A web interface used to view modmail threads and messages",
   "intent_filters": {
     "scope_url_scheme": "https",
