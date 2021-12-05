@@ -2,9 +2,9 @@ import { colors, darken } from '@material-ui/core';
 import { CustomPalette } from './index';
 
 const darkBackground = darken('#191919', 0.3);
-const pdpRedLight = '#e93030';
-const pdpRedMain = '#bc0707';
-const pdpRedDark = '#750202';
+const pdpRedLight = '#ce3ac1';
+const pdpRedMain = '#b228ad';
+const pdpRedDark = '#9028b2';
 
 const secondaryLight = '#7289da';
 const secondaryMain = '#3358d7';
