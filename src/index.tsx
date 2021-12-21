@@ -13,6 +13,7 @@ function destroyPreloader() {
         }, 1500);
     }
 }
+
 function onReady(): void {
     destroyPreloader();
 }
